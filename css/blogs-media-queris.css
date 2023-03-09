@@ -2,6 +2,7 @@
     .blogs-posts-container {
         margin: 0;
     }
+
     .blogs-posts-container #cards {
         gap: 40px;
         display: grid;
@@ -9,6 +10,7 @@
         margin-bottom: 33px;
         flex-direction: column;
     }
+}
 }
 
 @media (max-width: 912px) {
@@ -94,6 +96,16 @@
 
     .blogpost-main-container article .texto-inferios-concepto img {
         display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .blogs-posts-container #cards { gap: 40px;
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 33px;
+    flex-direction: column;
     }
 }
 
