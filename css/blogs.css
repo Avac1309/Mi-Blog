@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,700;1,400&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --color-base: #47c7ac;
+    --white: white;
+    --fondo-griseso: #e6e9ed;
+    --color-text: black;
+    --color-footer: #22272d;
+    --fondo-importante: #111b21;
+    --fondo-de-la-pagina: #202c33;
+    --difuminado-bello:linear-gradient(160deg, #ad52ff, #408abf); 
+    --Roboto-normal: 'Roboto', sans-serif;
+    --Roboto-Mono: 'Roboto Mono', monospace;
+    --Roboto-Slab: 'Roboto Slab', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo-de-la-pagina);
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+.home-body {
+    position: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.grid-container {
+    max-width: 980px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+header .header-icons-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    justify-items: end;
+    background:var(--difuminado-bello);
+}
+
+header .header-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+header .header-icons-container .icons span {
+    color: var(--white);
+}
+
+ nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+nav .nav-logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 114px;
+    font-size: 40px;
+}
+
+nav .nav-logo-container a {
+    font-family: 'Lobster', cursive;
+    color: var(--white);
+}
+
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+nav .profile-link a {
+    color: var(--color-text);
+    border-bottom: 1px solid white;
+    font-family: var(--Roboto-Mono);
+    color: var(--white);
+}
+
+/* blogs.html */
+.blogs-main {
+    display: grid;
+}
+
+.blogs-news-container {
+    background-color: var(--fondo-importante);
+    padding: 0 50px 40px;
+    box-shadow: 0 5px 15px 0px #111b21;
+}
+
+.blogs-main-new {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.blogs-new-img-container {
+    grid-column: 1;
+}
+
+.blogs-new-img-container img {
+    width: 85%;
+}
+
+.blogs-new-info-container {
+    grid-column: 2;
+}
+
+.blogs-main-new h3 {
+    color: var(--white);
+}
+
+.blogs-new-info-container h2 {
+    margin-top: 0;
+    color: #ad52ff;
+    text-shadow: 0 0px 12px #9f5adde3;
+    font-family: var(--Roboto-Slab);
+    margin-bottom: -4px;
+    letter-spacing: 1px;
+}
+
+.blogs-new-info-container p {
+    margin-bottom: 27px;
+    color: var(--white);
+}
+
+.blogs-buttom {
+    border: 1px solid #ad52ff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 15px;
+    color: var(--white);
+}
+
+/* .blogs-posts-container {
+    padding: 0 50px 40px;
+} */
+
+.blogs-posts-container div h3 {
+    padding-bottom: 20px;
+    text-align: center;    
+    color: white;
+    padding-bottom: 0;
+}
+
+.blogs-posts-container div div {
+    width: 100%;
+    height: 2px;
+    background: var(--difuminado-bello);
+    margin-bottom: 35px;
+}
+
+.blogs-posts-container #cards {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 33px;
+}
+
+.blogs-posts-container .post-container{
+    margin-left: 9px;
+    margin-bottom: 50px;
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+    box-shadow: 0px 8px 8px 0px #408abf;
+    border-radius: 10px;
+}
+
+.blogs-posts-container .post-container h4 {
+    color: #ad52ff;
+    font-family: var(--Roboto-Slab);
+    margin-bottom: -4px;
+    padding-left: 10px;
+}
+
+.blogs-posts-container .post-container p{
+    margin-bottom: 20px;
+    color: var(--white);
+    padding-left: 10px;
+}
+
+.blogs-posts-container .post-container a {
+    margin-left: 10px;
+}
+
+.blogs-posts-container .post-container img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: var(--fondo-importante);
+    text-align: center; 
+}
+
+footer div {
+    background: var(--difuminado-bello);
+    width: 100%;
+    height: 25px;
+}
+
+footer p {
+    color: white;
+}

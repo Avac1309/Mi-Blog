@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog (Practic)</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index-media-queris.css">
+    <link rel="stylesheet" href="./fons/Flaicon.css">
+    <link rel="stylesheet" href="./css/media-queris.css">
+    <link rel="stylesheet" href="./css/crear cuenta.css">
+<style>
+    
+nav {
+    background-color: #202c33;
+}
+
+.inactive {
+    display: none;
+}
+
+.entrar {
+    position: absolute;
+    z-index: 2;
+    top: -4px;
+    width: 100%;
+    background-color: #202c337d;
+}
+
+</style>
+<body id="pantalla">
+    <header>
+        <section class="header-icons-container">
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100009507770303"><span class="flaticon-001-facebook" id="facebook"></span></a>
+                <a href="https://twitter.com/Jairiii13"><span class="flaticon-002-twitter" id="twitter"></span></a>
+                <a href="https://www.instagram.com/jairinodaa/"><span class="flaticon-011-instagram" id="instagram"></span></a>
+                <a href="https://www.linkedin.com/in/jairiana-noda-a53499267/"><span class="flaticon-010-linkedin" id="likedin"></span></a>
+            </div>
+        </section>
+
+        <nav>
+            <section class="nav-logo-container">
+                <a href="./index.html"> Mi Blog</a>
+            </section>
+
+            <section class="profile-link">
+                <a>Sobre mi</a>
+            </section>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section>
+            <h1 class="home-main-title">Conoce las novedades y <br> notificaciones de <br>las maravillas <br> del universo</h1>
+            <button class="home-main-buttom"><a>Entra ya!!</a></button>
+        </section>
+    </main>
+
+    <main class="entrar inactive">
+        <div class="login">
+            <div class="form-container">
+                <form action="/" class="form">
+                    <div>
+                        <label for="name" class="label">Nombre</label>
+                        <input type="text" id="name" placeholder="Nombre" class="input input-name">
+                        <!-- <p id="Parrafo-alternativo"></p> -->
+        
+                        <label for="email" class="label">Instagram</label>
+                        <input type="text" id="email" placeholder="@usuario" class="input input-email">
+        
+                        <label for="password" class="label">Contraseña</label>
+                        <input type="password" id="password" placeholder="*********" class="input input-password">
+                    </div>
+        
+                <a class="primary-button login-button" href="./blogs.html">Siguiente</a> 
+                </form>
+            </div>
+            <a class="closed">X</a>
+        </div>
+    </main>
+
+    <script src="./JavaScript/index.js"></script>
+</body>
+</html>
