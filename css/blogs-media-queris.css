@@ -3,7 +3,7 @@
         margin: 0;
     }
 
-    .blogs-posts-container #cards {
+    .blogs-posts-container #cards{
         gap: 40px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -11,7 +11,7 @@
         flex-direction: column;
     }
 }
-}
+
 
 @media (max-width: 912px) {
     .blogs-posts-container .post-container {
